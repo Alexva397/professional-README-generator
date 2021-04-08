@@ -4,14 +4,12 @@ const fs = require('fs');
 const genMD = require('./utils/generateMarkdown.js');
 const util = require('util');
 
-// // Creating a promise to write file
+// Creating a promise to write file
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// // TODO: Create an array of questions for user input
+// TODO: Create an array of questions for user input
 const promptUser = () => {
  return inquirer.prompt([
-// inquirer
-//     .prompt([
     {
         name: 'title',
         type: 'input',
@@ -41,7 +39,7 @@ const promptUser = () => {
         name: 'license',
         type: 'list',
         message: 'Please select the license used.',
-        choices: ['MIT', 'GPLv3', 'GPLv2', 'Apache', 'BSD 3', 'Other'],
+        choices: ['MIT', 'GPL', 'Apache', 'BSD 3', 'BSD 2', 'none'],
     },
     {
         name: 'test',
@@ -66,56 +64,14 @@ const promptUser = () => {
  ])
 };
 
-const generateMD = (answers) => 
-`# ${answers.title}
-    
-    
-## Table of Contents
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Tests](#test)
-- [Questions](#questions)
-
-
-## Description
-${answers.description}
-
-## Installation
-${answers.installation}
-
-## Usage
-${answers.usage}
-
-## Contributing
-${answers.contributing}
-
-## License
-${answers.license}
-
-## Tests
-${answers.tests}
-
-## Questions
-
-  If you have any questions regarding the repo, please contact me at one of the following:
-    [Github](https://github.com/${answers.github})
-    [Email](mailto:${answers.email})
-    [LinkedIn](${answers.linkedin})
-`;
-
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {};
 
 // TODO: Create a function to initialize app
 const init = () => {
     promptUser()
-    .then((answers) => console.log(answers))
-    .then((answers) => writeFileAsync('./generated/README.md', generateMD(answers)))
+    // .then((answers) => console.log(answers.license))
+    .then((answers) => writeFileAsync('./generated/README.md', genMD(answers)))
     .then(() => console.log('README.md successfully generated!'))
-    .catch((err) => console.error(err))
+    .catch((err) => console.error(err));
 };
 
 
