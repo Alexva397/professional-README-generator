@@ -27,7 +27,10 @@ function renderLicenseBadge(license) {
   for (let i = 0; i < licenseBadges.length; i++) {
     if (license === licenseBadges[i].name) {
       return licenseBadges[i].badge;
-    }
+    } 
+    // else {
+    //   return "";
+    // }
   }
 
 }
@@ -38,7 +41,15 @@ function renderLicenseBadge(license) {
 
 // // TODO: Create a function that returns the license section of README
 // // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
+// function renderLicenseSection(answers) {
+//   if (answers.license === 'none') {
+//     return "";
+// } else {
+//   return `
+//   ## License
+//     ${renderLicenseBadge(answers.license)}`;
+// }
+// }
 
 // Function to write MD with user input
 const generateMarkdown = (answers) => {
@@ -74,9 +85,6 @@ ${renderLicenseBadge(answers.license)}
   ${answers.contributing}
 
 
-## License
-  ${answers.license}
-
 
 ## Tests
   ${answers.test}
@@ -95,3 +103,5 @@ ${renderLicenseBadge(answers.license)}
 }
 
 module.exports = generateMarkdown;
+
+// ${renderLicenseSection(answers)}
