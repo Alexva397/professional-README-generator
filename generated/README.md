@@ -1,6 +1,6 @@
-# fmsbkdjhgjhkaghjghjgskljgajhgljslakdgkjsgs
+# lfjdglkj;jksjgj;fdsjk;gdsjfg;kfdjsgkjk;jdgskdjf;jgdfkgjdflk
   
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
+[![License: BSD3](https://img.shields.io/badge/License-BSD3-blue)](https://opensource.org/licenses/BSD-3-Clause)
 
   
 ## Table of Contents
@@ -15,32 +15,35 @@
 
 
 ## Description
-  fmsbkdjhgjhkaghjghjgskljgajhgljslakdgkjsgs
+  lfjdglkj;jksjgj;fdsjk;gdsjfg;kfdjsgkjk;jdgskdjf;jgdfkgjdflk
 
 
 ## Installation
-  fmsbkdjhgjhkaghjghjgskljgajhgljslakdgkjsgs
+  lfjdglkj;jksjgj;fdsjk;gdsjfg;kfdjsgkjk;jdgskdjf;jgdfkgjdflk
 
 
 ## Usage
-  fmsbkdjhgjhkaghjghjgskljgajhgljslakdgkjsgs
+  lfjdglkj;jksjgj;fdsjk;gdsjfg;kfdjsgkjk;jdgskdjf;jgdfkgjdflk
 
 
 ## Contributing
-  fmsbkdjhgjhkaghjghjgskljgajhgljslakdgkjsgs
+  lfjdglkj;jksjgj;fdsjk;gdsjfg;kfdjsgkjk;jdgskdjf;jgdfkgjdflk
+  
 
+## License
+[![License: BSD3](https://img.shields.io/badge/License-BSD3-blue)](https://opensource.org/licenses/BSD-3-Clause)
 
 
 ## Tests
-  fmsbkdjhgjhkaghjghjgskljgajhgljslakdgkjsgs
+  lfjdglkj;jksjgj;fdsjk;gdsjfg;kfdjsgkjk;jdgskdjf;jgdfkgjdflk
 
 
 ## Questions
 
   If you have any questions regarding the repo, please contact me at one of the following:
     
-  [Github](https://github.com/fmsbkdjhgjhkaghjghjgskljgajhgljslakdgkjsgs)
+  [Github](https://github.com/lfjdglkj;jksjgj;fdsjk;gdsjfg;kfdjsgkjk;jdgskdjf;jgdfkgjdflk)
     
-  [Email](mailto:fmsbkdjhgjhkaghjghjgskljgajhgljslakdgkjsgs)
+  [Email](mailto:lfjdglkj;jksjgj;fdsjk;gdsjfg;kfdjsgkjk;jdgskdjf;jgdfkgjdflk)
     
-  [LinkedIn](fmsbkdjhgjhkaghjghjgskljgajhgljslakdgkjsgs)
+  [LinkedIn](lfjdglkj;jksjgj;fdsjk;gdsjfg;kfdjsgkjk;jdgskdjf;jgdfkgjdflk)
