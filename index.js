@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Include packages
 const inquirer = require('inquirer');
 const fs = require('fs');
 const genMD = require('./utils/generateMarkdown.js');
@@ -7,7 +7,7 @@ const util = require('util');
 // Creating a promise to write file
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create an array of questions for user input
+// Prompt user for input to generate READMEM.md
 const promptUser = () => {
  return inquirer.prompt([
     {
@@ -65,7 +65,7 @@ const promptUser = () => {
 };
 
 
-// TODO: Create a function to initialize app
+// init to run prompt and return promises
 const init = () => {
     promptUser()
     // .then((answers) => console.log(answers.license))

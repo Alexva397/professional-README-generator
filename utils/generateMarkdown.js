@@ -1,6 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
+// function to creat license badge
+const renderLicenseBadge = (answers) => {
   const licenseBadges = [
     {
       name: 'MIT',
@@ -25,7 +24,7 @@ function renderLicenseBadge(license) {
   ];
 
   for (let i = 0; i < licenseBadges.length; i++) {
-    if (license === licenseBadges[i].name) {
+    if (answers === licenseBadges[i].name) {
       return licenseBadges[i].badge;
     } 
     // else {
@@ -35,10 +34,8 @@ function renderLicenseBadge(license) {
 
 }
 
-
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-function renderLicenseSection(answers) {
+// function to create license section
+const renderLicenseSection = (answers) => {
   if (answers.license === 'none') {
     return "";
 } else {
@@ -53,11 +50,17 @@ ${renderLicenseBadge(answers.license)}
 const generateMarkdown = (answers) => {
   return `# ${answers.title}
   
+
 ${renderLicenseBadge(answers.license)}
 
   
+
+## Description
+  ${answers.description}
+
+
+
 ## Table of Contents
-- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -67,25 +70,26 @@ ${renderLicenseBadge(answers.license)}
 
 
 
-## Description
-  ${answers.description}
-
-
 ## Installation
   ${answers.installation}
+
 
 
 ## Usage
   ${answers.usage}
 
 
+
 ## Contributing
   ${answers.contributing}
-  
+
+
 ${renderLicenseSection(answers)}
+
 
 ## Tests
   ${answers.test}
+
 
 
 ## Questions
@@ -93,10 +97,10 @@ ${renderLicenseSection(answers)}
   If you have any questions regarding the repo, please contact me at one of the following:
     
   [Github](https://github.com/${answers.github})
-    
-  [Email](mailto:${answers.email})
-    
+
   [LinkedIn](${answers.linkedin})
+
+  [${answers.email}](mailto:${answers.email})
 `;
 }
 
