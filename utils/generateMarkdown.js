@@ -21,15 +21,16 @@ const renderLicenseBadge = (answers) => {
       name: 'BSD 2',
       badge: '[![License: BSD2](https://img.shields.io/badge/License-BSD2-blue)](https://opensource.org/licenses/BSD-2-Clause)',
     },
+    {
+      name: 'none',
+      badge: '',
+    },
   ];
 
   for (let i = 0; i < licenseBadges.length; i++) {
     if (answers === licenseBadges[i].name) {
       return licenseBadges[i].badge;
     } 
-    // else {
-    //   return "";
-    // }
   }
 
 }

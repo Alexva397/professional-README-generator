@@ -1,7 +1,7 @@
 // Include packages
 const inquirer = require('inquirer');
 const fs = require('fs');
-const genMD = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 const util = require('util');
 
 // Creating a promise to write file
@@ -69,7 +69,7 @@ const promptUser = () => {
 const init = () => {
     promptUser()
     // .then((answers) => console.log(answers.license))
-    .then((answers) => writeFileAsync('./generated/README.md', genMD(answers)))
+    .then((answers) => writeFileAsync('./generated/README.md', generateMarkdown(answers)))
     .then(() => console.log('README.md successfully generated!'))
     .catch((err) => console.error(err));
 };
